@@ -1,0 +1,126 @@
+.logo{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100%;
+    height:fit-content;
+    mix-blend-mode: difference;
+    position: relative;
+    top: 20%;
+    left: 0;
+    
+    }
+    
+    
+    @keyframes logo {
+    0%{
+        opacity: 0.1;
+    
+    }
+    
+    100%{
+        opacity: 1;
+    
+    }
+    
+    }
+    
+
+    
+    
+    .mostra{
+        display: inline-block;
+       
+    }
+    
+    .esconder{
+        display: none;
+    }
+    
+    
+    
+    .logo div .mostra:hover{
+      opacity: 0.1;
+      animation-name: logo;
+      animation-duration: 1s;
+      opacity: 1;
+    }
+    
+    .logo>div img{
+        filter: invert(1);
+    }
+
+    .logo div .mostra{
+        transition: opacity .3s;
+        margin: 20px;
+        
+     
+    
+    }
+    /*///////////////////////Responsividade////////////////////////*/
+    
+    @media (max-width: 1244px) {
+        .logo{
+            top: 10%;
+            left: 9%;
+            right: 9%;
+            width: 80%
+            }
+    
+    
+    
+    @media (max-width: 1107px) {
+        .logo{
+            top: 8%;
+            left: 10%;
+            right: 15%
+            
+            }
+    
+     @media (max-width: 900px) {
+                .logo{
+                    top: 10%;
+                    left: 5%;
+                    right: 1%;
+                    width:100%;
+                    }
+    
+    }
+    
+     @media (max-width: 940px) {
+                .logo{
+                    top: 3%;
+                    left: 5%;
+                    right: 1%;
+                    width:80%;
+                    }
+    
+    }
+    
+    @media (max-width: 858px) {
+        .logo{
+            top: 15%;
+            left: 1%;
+            right: 1%;
+            width:100%;
+            }
+          /*--DEDO/TELE--*/
+            .logo div .mostra:active{
+                opacity: 0.1;
+                animation-name: logo;
+                animation-duration: 1s;
+                opacity: 1;
+              }
+    
+    }
+    
+    @media (max-width: 658px) {
+        .logo{
+            bottom: 15%;
+            }
+
+    }
+    
+    }
+
+    }

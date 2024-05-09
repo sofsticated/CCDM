@@ -1,0 +1,31 @@
+/* ------------------------------- Sobre (CC–D+M) ---------------------------------------------------------------- */
+
+.sobre_ccdm{
+    margin-bottom:30vw;  
+    margin-top: 20vw;
+}
+
+.content>p{
+    margin: 17%;
+    margin-top: 1.8vw;
+    font-size: 16px;
+
+
+}
+
+/*///////////////////////Responsividade////////////////////////*/
+
+@media (max-width: 758px) {
+
+    .content>p{
+
+        margin-top: 10vw;
+    
+    
+    }  
+  
+    .sobre_ccdm{
+        margin-bottom:35vw;  
+    }
+
+  }

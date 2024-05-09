@@ -1,0 +1,173 @@
+/* ------------------------------- GERAL ---------------------------------------------------------------- */
+
+@font-face {
+  font-family: fontegeral;
+  src: url("fonts/ManilaSansReg.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: fontegeralbold;
+  src: url("fonts/ManilaSansBld.otf") format("opentype");
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fontegeral;
+ color:white;
+  scroll-behavior: smooth;
+ 
+}
+
+html{
+  overflow-x: hidden;
+}
+
+
+/* ------------------------------- BODY ---------------------------------------------------------------- */
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* ------------------------------- HEADER ---------------------------------------------------------------- */
+header { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  z-index: 1000;
+  transition: 0.8s;
+
+    
+} 
+
+header.sticky{
+  padding: 15px 120px;
+}
+
+header .logoH{
+  position: relative;
+  font-weight: 600;
+  text-decoration:none;
+  font-family: fontegeralbold;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 1s;
+ 
+  
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+header ul li {
+  position: relative;
+  list-style: none;
+
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 25px;
+  transition: 0.8s;
+
+}
+
+header.sticky .logoH{
+  font-size: 30px;
+ 
+}
+header.sticky ul li a {
+  font-size: 13px;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color:black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vw;
+}
+
+/* ------------------------------- TÍTULOS ---------------------------------------------------------------- */
+.titulos{
+  width: 90%;
+  position: relative;
+  margin-bottom: 5vw;
+  margin: 5%;
+
+}
+
+/* ------------------------------- CONTATOS ---------------------------------------------------------------- */
+.contatos{
+  margin-top: 30vw; 
+  margin-bottom: 16vw;
+}
+
+.contatos>div>p{
+  text-align: center;
+}
+
+.contatos>div>h3{
+  text-align: center;
+  margin-top: 2vw;
+}
+
+
+/*///////////////////////Responsividade////////////////////////*/
+
+@media (max-width: 1215px) {
+  header ul {
+display: none;
+
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+
+
+}
+
+@media (max-width: 940px) {
+  header {
+      width:80%;
+      }
+
+      .contatos{
+        margin-top: 8vw;
+        margin-bottom: 21vw;
+      }
+
+      .contatos>div>p{
+        text-align: center;
+      }
+
+}

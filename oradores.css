@@ -1,0 +1,198 @@
+
+/* ------------------------------- BODY ---------------------------------------------------------------- */
+.slides{
+  position: relative;
+  margin-left: 5%;
+  margin-top: 4.2vw;
+  height: 100%; 
+
+
+}
+.slide_fade{
+display: none;
+height: 187.5%; 
+
+}
+
+
+.slides img{
+  margin: 6%;
+  z-index: -10;
+}
+
+
+.slides .i{
+  z-index: -100;
+  position: absolute;
+  top: -24.3%;
+  left: -7.6%;
+  background-size:cover;
+  opacity: 0.8;
+}
+
+.slides .texto{
+  display: inline-block;
+  position: absolute;
+  left: 47%;
+  top: 10%;
+  z-index: 10;
+  margin: 5%;
+  margin-right:12% ;
+
+}
+
+
+
+.texto>p{
+  margin-top:5%;
+}
+
+.texto>h1{
+  font-family: fontegeralbold;
+  font-size:45px;
+}
+
+.revelar{
+  display:block;
+}
+
+
+
+/* ------------------------------- Botoens ---------------------------------------------------------------- */
+
+.botoespre, .botoesnext {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+  user-select: none;
+}
+
+.botoesnext{
+  right: 5%;
+}
+
+
+.botoespre:hover, .botoesnext:hover{
+  font-size: 65px;
+  opacity: 0.4;
+}
+
+/*///////////////////////Responsividade////////////////////////*/
+
+
+@media (max-width: 1107px) {
+  .slide_fade {
+    height:83%;
+    position: relative;
+    top: 3.3%;
+    left: 0.2%;
+     }
+
+     .slides .i{
+      top: -40.9%;
+      left: -7.5%;
+    }
+
+    .slides .i{
+      top: -40.9%;
+      left: -7.5%;
+    }
+    
+    .texto>p{
+      position: absolute;
+      top: 35vw;
+      left: -46vw;
+      margin: 20%;
+    }
+    .texto>h1{
+      font-size: 8.8vw;
+      position: relative;
+      top: -2vw;
+    }
+    
+    .botoespre, .botoesnext {
+      position: absolute;
+      top: 100%;
+      font-size: 9vw;
+    
+    }
+
+    }
+
+
+    @media (max-width: 858px) {
+
+      .slide_fade {
+        height: 67%;
+        position: relative;
+        top: 6.3%;
+        left: 0.2%;
+         }
+
+         .botoespre, .botoesnext {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          font-size: 50px;
+          padding: 15px;
+          cursor: pointer;
+          transition: 0.1s;
+          user-select: none;
+        }
+        
+
+        }
+        
+        
+
+@media (max-width: 758px) {
+
+  .slide_fade {
+    height: 93vw;
+    position: relative;
+    top: 7.999999999999%;
+    left: 0.2%;
+}
+  
+
+
+.slides .i{
+  top: -40.9%;
+  left: -7.5%;
+}
+
+.texto>p{
+  position: absolute;
+  top: 35vw;
+  left: -46vw;
+  margin: 20%;
+}
+.texto>h1{
+  font-size: 10vw;
+  position: relative;
+  top: -2vw;
+}
+
+.botoespre, .botoesnext {
+  position: absolute;
+  top: 100%;
+  font-size: 9vw;
+
+}
+
+.botoespre, .botoesnext {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+  user-select: none;
+}
+
+}
